@@ -1,0 +1,25 @@
+・概要
+JavaSE6のApache HttpClient(Java)の簡単なサンプルです。
+コロプラ/マーベラス(アニメ＆ビジュアル)のニュースサイトからキーワードの内容を検索し、conf.propertiesの設定にしたがってcsvファイルで出力します。
+エントリポイントの仕様は以下のとおりです
+demo.websrh.Main
+第1引数:marvelous/colopl
+第2引数:検索キーワード
+
+・conf.propertiesの設定
+exec.XXXのJSONの内容
+uri→ニュースページのテンプレートです。
+max→ニュースページのページ番号を検索する最大値です(1からmaxまで検索します)
+logicClass→処理の実装クラスです。
+filePath→出力ファイルのパス+名前です。
+
+・実行例
+windows環境の場合、scriptフォルダ配下のbatファイルが実行可能です(サイズが大きく恐縮ですがJREそのまま入れてます)。
+出力例はscript/outにあります。
+
+・コードの説明
+引数により実装の異なるdemo.websrh.ClientLogicのサブクラスを実行します(strategyパターン)。
+今回は実装しておりませんが、出力形式の変更・切替(CSV以外にする)は比較的容易な作りになっていると思います。
+demo.websrh.util.Htmlのフィルタチェインは委譲が好みですが(JavaSE8以降ならラムダ式)今回はやりすぎなのでやめました。
+
+以上です。
