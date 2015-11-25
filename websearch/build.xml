@@ -13,7 +13,7 @@
     	<javac  srcdir="src"
     	        destdir="classes"
     	        classpathref="classpath" />
-		<jar destfile="C://00pleiades/websearch-1.0.0.jar"
+		<jar destfile="C://00pleiades/websrh-1.0.0.jar"
 			basedir="classes"
 			excludes="**/conf.properties">
 		    <manifest>
