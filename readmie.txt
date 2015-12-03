@@ -1,9 +1,9 @@
 ・概要
 JavaSE6のApache HttpClient(Java)の簡単なサンプルです。
-コロプラ/マーベラス(アニメ＆ビジュアル)のニュースサイトからキーワードの内容を検索し、conf.propertiesの設定にしたがってcsvファイルで出力します。
+コロプラ/マーベラス(アニメ＆ビジュアル)/SEGA NETWORKSのニュースサイトからキーワードの内容を検索し、conf.propertiesの設定にしたがってcsvファイルで出力します。
 エントリポイントの仕様は以下のとおりです
 demo.websrh.Main
-第1引数:marvelous/colopl
+第1引数:marvelous/colopl/seganw
 第2引数:検索キーワード
 
 ・conf.propertiesの設定
@@ -17,6 +17,7 @@ filePath→出力ファイルのパス+名前です。
 windows環境の場合、scriptフォルダ配下のbatファイルが実行可能です
 (jre6.zipを解凍し、scriptフォルダに配置するか、お手持ちのJREを使用するかしてください)。
 出力例はscript/outにあります。
+
 
 ・コードの説明
 引数により実装の異なるdemo.websrh.ClientLogicのサブクラスを実行します(Strategyパターン)。
